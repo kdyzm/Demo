@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 8083
 eureka:
   client:
     serviceUrl:
@@ -10,4 +10,4 @@ eureka:
     prefer-ip-address: true
 spring:
   application:
-    name: com.kdyzm.server1
+    name: com.kdyzm.server2
