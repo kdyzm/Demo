@@ -11,3 +11,8 @@ eureka:
 spring:
   application:
     name: com.kdyzm.server2
+  zipkin:
+    base-url: http://localhost:11008
+  sleuth:
+    sampler:
+      percentage: 1.0
