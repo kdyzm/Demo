@@ -1,11 +1,11 @@
 package org.server1.server.rest.impl;
 
-import org.server1.api.UserResource;
+import org.server1.api.Server1UserResource;
 import org.server1.api.models.UserModel;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class UserResourceImpl implements UserResource {
+public class UserResourceImpl implements Server1UserResource {
 
 	@Override
 	public UserModel getUserById(String userId) {

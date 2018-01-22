@@ -13,6 +13,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<druid-version>1.0.18</druid-version>
 	</properties>
 
 	<dependencies>
@@ -29,6 +30,11 @@
 	</parent>
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>druid</artifactId>
+				<version>${druid-version}</version>
+			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
@@ -51,6 +57,7 @@
 	<modules>
 		<module>server2-api</module>
 		<module>server2-server</module>
+		<module>server2-service</module>
 	</modules>
 	<build>
 		<plugins>
