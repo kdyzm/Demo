@@ -25,9 +25,11 @@ public class UserResourceImpl implements UserResource {
 
 	@Override
 	public String getUserById(String userId) {
+		logger.info("[start]");
 		User user = userMapper.selectById(Integer.parseInt(userId));
 		logger.info(user.toString());
 		UserModel userById = server1UserResource.getUserById("1");
+		logger.info("[end],{}",new Gson().toJson(userById));
 		return new Gson().toJson(userById);
 	}
 
