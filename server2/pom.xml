@@ -14,6 +14,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<druid-version>1.0.18</druid-version>
+		<ons.version>1.7.0.Final</ons.version>
 	</properties>
 
 	<dependencies>
@@ -30,6 +31,11 @@
 	</parent>
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>com.aliyun.openservices</groupId>
+				<artifactId>ons-client</artifactId>
+				<version>${ons.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>com.alibaba</groupId>
 				<artifactId>druid</artifactId>
